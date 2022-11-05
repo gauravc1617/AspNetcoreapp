@@ -6,7 +6,7 @@ on:
       - master
 jobs:
     build:
-        name: Azure Pipeline
+        name: Azure Pipelin
         runs-on: ubuntu-latest
         steps:
         - name: AzurePipeline Action
