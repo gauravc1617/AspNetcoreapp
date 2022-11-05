@@ -6,12 +6,12 @@ on:
       - master
 jobs:
     build:
-     name: Azure Pipeline
-     runs-on: ubuntu-latest
-     steps:
-     - name: AzurePipeline Action
-       uses: Azure/pipelines@v1
-       with:
-         azure-devops-project-url: https://dev.azure.com/gauravskumar/AgileProject
-         azure-pipeline-name: 'gauravc1617.AspNetcoreapp'
-         azure-devops-token: ${{secrets.AZURE_DEVOPS_TOKEN}}
+        name: Azure Pipeline
+        runs-on: ubuntu-latest
+        steps:
+        - name: AzurePipeline Action
+          uses: Azure/pipelines@v1
+          with:
+             azure-devops-project-url: https://dev.azure.com/gauravskumar/AgileProject
+             azure-pipeline-name: 'azureworkflow'
+             azure-devops-token: ${{secrets.AZURE_DEVOPS_TOKEN}}
